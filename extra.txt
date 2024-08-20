@@ -1,0 +1,6 @@
+1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+2. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals
+3. regular expressions - https://www.youtube.com/watch?v=rhzKDrUiJVk
+4. https://www.theodinproject.com/lessons/foundations-problem-solving
+5. https://www.theodinproject.com/lessons/foundations-understanding-errors
+6. 

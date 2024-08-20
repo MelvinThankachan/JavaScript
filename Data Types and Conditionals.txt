@@ -1,0 +1,168 @@
+- dynamically typed
+
+Primitive data types
+
+    1. number - for numbers of any kind, integer or floating-point, integers are limited by ±(253-1).
+    2. bigint - for integer numbers of arbitrary length.
+    3. string for strings. A string may have zero or more characters, there’s no separate 4.  single-character type.
+    4. boolean - for true/false.
+    5. null - for unknown values – a standalone type that has a single value null.
+    6. undefined - for unassigned values – a standalone type that has a single value undefined.
+    7. symbol: for unique identifiers.
+
+
+Non Primitive data types
+
+    8. object - for more complex data structures. to store different types of data.
+
+
+Number
+------
+
+- Doing maths is “safe” in JavaScript. We can do anything: divide by zero, treat non-numeric strings as numbers, etc.
+- The script will never stop with a fatal error (“die”). At worst, we’ll get NaN as the result.
+
+Stirng
+------
+
+1. Double quotes: "Hello".
+2. Single quotes: 'Hello'.
+3. Backticks: `Hello`. Its called template literal
+
+- Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:
+    console.log( `the result is ${1 + 2}` );
+- Backticks allow multi-line strings
+
+
+typeof
+------
+- typeof is an operator, not a function.
+- For null typeof operator returns "object" – this is an error in the language, it’s not actually an object.
+
+
+String Methods
+--------------
+
+- text.at(-1) - allows backward accessing
+- text[0] = "A"; -  Gives no error, but does not work
+- text.slice(start, end) 
+- text.trim(), trimStart(), trimEnd()
+- text.padStart(4, "x"), text.padEnd(4, "x") - if there is no enough(in this case 4) characters in the text it add remaining characters "x in the start or end
+- text.repeat(5) - Concatenate the same string untill it repeat 5 times
+- text.replace("a", "b") - replace the first occurrence "a" with "b"
+- text.replaceAll("a", "b") - replace all occurrence of "a" with "b"
+- text.split("") - convert in to an array, split(",") - split whenever a "," occurred. "," wont add to array.
+
+
+
+
+Conditionals
+------------
+
+
+- String comparison - compare in the "lexicographical" order(like dictionary).
+- >, >=, <, <= , != and == are loosely compared (convert the value to a common type before comparison)
+- === and !== are strictly compared (consider the type of the values too)
+- Be careful when comparing "undefined" and "null" with other values, except when using the strict equality "===".
+- Don’t use comparisons >=, >, <, <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+- null and undefined are loosely equal. 
+- neither undefined nor null is loosely equal to any other values, including empty strings.
+
+
+Logical Operators
+-----------------
+
+- || (OR)
+- && (AND)
+- ! (NOT)
+- ?? (Nullish Coalescing)
+
+
+The OR || operator does the following:
+
+    - Evaluates operands from left to right.
+    - For each operand, converts it to boolean. If the result is true, stops and returns the original value of that operand.
+    - If all are falsy, returns the last operand.
+    - Allows short-circuiting (Stopping the process when a truthy value found)
+
+The AND && operator does the following:
+
+    - Evaluates operands from left to right.
+    - For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.
+    - If all operands have been evaluated (i.e. all were truthy), returns the last operand.
+    - Allows short-circuiting (Stopping the process when a falsy value found)
+
+precedence - && > ||
+
+
+Nullish Coalescing(??)
+-----------------------
+- It provides a way to handle null or undefined values with a fallback option. 
+- It returns the right-hand operand when the left-hand operand is null or undefined, otherwise, it returns the left-hand operand.
+    let value = null ?? "default";  // Output: "default"
+    value = undefined ?? "default";  // Output: "default"
+    value = 0 ?? "default";  // Output: 0
+    value = "" ?? "default";  // Output: ""
+
+
+Ternary Operator
+----------------
+
+- Multiple "?"
+
+    let age = prompt('age?', 18);
+
+    let message = (age < 3) ? 'Hi, baby!' :
+    (age < 18) ? 'Hello!' :
+    (age < 100) ? 'Greetings!' :
+    'What an unusual age!';
+
+    alert( message );
+
+
+Switch
+------
+
+- Grouping
+
+    switch (a) {
+        case 0:
+            console.log(0);
+            break;
+        case 1:
+            console.log(1);
+            break;
+        case 2:
+        case 3:
+            console.log("2, 3");    // works like if (a === 2 || a === 3)
+            break;
+        default:
+            console.log("OMKV");
+        }
+
+- Type matters, in switch its check for strict equality
+
+
+
+
+Questions:
+----------
+
+1. What are the eight data types in JavaScript?
+2. Which data type is NOT primitive?
+3. What is the relationship between null and undefined?
+4. What is the difference between single, double, and backtick quotes for strings?
+5. What is the term for joining strings together?
+6. Which type of quote lets you embed variables/expressions in a string?
+7. How do you embed variables/expressions in a string?
+8. How do you use escape characters in a string?
+9. What is the difference between the slice/substring/substr string methods?
+10. What are the three logical operators, and what do they stand for?
+11. What are the comparison operators?
+12. What are truthy and falsy values?
+13. What are the falsy values in JavaScript?
+14. What are conditionals?
+15. What is the syntax for an if/else conditional?
+16. What is the syntax for a switch statement?
+17. What is the syntax for a ternary operator?
+18. What is nesting?

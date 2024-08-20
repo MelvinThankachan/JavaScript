@@ -1,0 +1,28 @@
+Understand the problem
+----------------------
+    - When you can explain the problem to someone else in plain English, you understand it.
+    - To gain clarity and understanding of the problem, write it down on paper, reword it in plain English until it makes sense to you, and draw diagrams if that helps.
+
+Plan
+----
+    - What are the inputs?
+    - What is the desired output?
+    - What are the steps necessary to return the desired output?
+    - What is the algorithm to solve the problem?
+    - Write the Pseudocode
+
+Pseudocode
+----------
+    - Pseudocode is writing out the logic for your program in natural language instead of code.
+    - It helps you slow down and think through the steps your program will have to go through to solve the problem.
+    - Example:
+        - When the user inputs a number
+        - Initialize a counter variable and set its value to zero
+        - While counter is smaller than user inputted number increment the counter by one
+        - Print the value of the counter variable
+
+Divide and conquer
+------------------
+    - Divide the big problem to sub-problems
+    - And word on the sub-problems
+    - Don't try to solve the big problem in one go.

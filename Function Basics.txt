@@ -1,0 +1,71 @@
+Functions
+---------
+
+    - Reusable blocks of code to perform a single task.
+    - Parameters - The variables we declare inside the parenthesis when we define a functions. Its not mandatory.
+    - alert(someFunctionVariable) - return the implementation of that function
+    - function is a value
+    - We can copy a function to another variable
+
+Default Parameters:
+    function hello(name = "Chris") {
+    console.log(`Hello ${name}!`);
+    } 
+
+Anonymous Functions
+-------------------
+    - Functions which don’t have a name
+    - It's not hoisted
+    - also called as function expression
+    - Global Functions declarations are hoisted. We can use the function even before it's declaration, but we can't do that in function expressions.
+
+Arrow Functions
+---------------
+    - Arrow functions are a more concise syntax for writing anonymous functions.
+    - Instead of function(parameter), you write (parameter) =>
+
+        // Traditional function expression
+        const add = function(a, b) {
+            return a + b;
+        };
+
+        // Arrow function
+        const add = (a, b) => a + b;
+
+
+Scope
+-----
+
+    - The top-level outside all your functions is called the global scope. Values defined in the global scope are accessible from everywhere in the code.
+    - the variables and other things defined inside the function are inside their own separate scope (local scope)
+    - Global variables are visible from any function (unless shadowed by locals).
+    - It’s a good practice to minimize the use of global variables. 
+
+Callback Functions
+------------------
+
+    - Callback function is a function we passed as an argument to an another function.
+    - The callback function will be called inside the calling function.
+    - Javascript store the order of function calls in a call stack.
+    - Javascript is a asynchronous. Single threaded programming language. JavaScript engine has only one call stack. Therefore, it only can do one thing at a time.
+
+
+Good Practices
+--------------
+
+    - To make the code clean and easy to understand, it’s recommended to use mainly local variables and parameters in the function, not outer variables.
+    - It is always easier to understand a function which gets parameters, works with them and returns a result than a function which gets no parameters, but modifies outer variables as a side effect.
+    - A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.
+    - A function is an action, so function names are usually verbal.
+    - There exist many well-known function prefixes like create…, show…, get…, check… and so on. Use them to hint what a function does.
+
+
+
+Questions:
+    
+    1. What are functions useful for?
+    2. How do you invoke a function?
+    3. What are anonymous functions?
+    4. What is function scope?
+    5. What are return values?
+    6. What are arrow functions?

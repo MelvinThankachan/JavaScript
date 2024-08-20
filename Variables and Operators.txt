@@ -1,0 +1,48 @@
+Naming Variables
+----------------
+
+- There are 3 rules on variable names in JavaScript:
+
+    - The name must contain only letters, digits, or the symbols $ and _.
+    - The first character must not be a digit.
+    - Names should not be a reserved keyword. 
+
+- When the name contains multiple words, camelCase is commonly used. That is: words go one after another, each word except first starting with a capital letter: myVeryLongName.
+
+- Variables named apple and APPLE are two different variables. Variable names are case sensitive.
+
+
+
+Arithmetic Operators
+--------------------
+
++ 	Addition
+- 	Subtraction
+* 	Multiplication
+** 	Exponentiation (ES6)
+/ 	Division
+% 	Modulus (Remainder)
+++ 	Increment
+-- 	Decrement
+
+
+Numbers
+-------
+
+- JavaScript Numbers are Always 64-bit Floating Point
+
+- Integer Precision
+    Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+    Example
+    let x = 999999999999999;   // x will be 999999999999999
+    let y = 9999999999999999;  // y will be 10000000000000000 
+
+- If you add a number and a string, the result will be a string concatenation
+
+- JavaScript will try to convert strings to numbers in all numeric operations
+
+- NaN is a number: typeof NaN returns number
+
+- Infinity
+
+- Unary addition do the same operation which the Number(...) do.
