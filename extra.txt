@@ -3,4 +3,5 @@
 3. regular expressions - https://www.youtube.com/watch?v=rhzKDrUiJVk
 4. https://www.theodinproject.com/lessons/foundations-problem-solving
 5. https://www.theodinproject.com/lessons/foundations-understanding-errors
-6. 
+6. https://www.theodinproject.com/lessons/foundations-clean-code
+7. 

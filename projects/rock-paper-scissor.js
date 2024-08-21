@@ -17,7 +17,7 @@ const playGame = () => {
     let computerChoice = getComputerChoice(choices);
 
     console.log(
-      `Your Choice     : ${humanChoice}, Computer Choice : ${computerChoice}`
+      `Your Choice: ${humanChoice}, Computer Choice: ${computerChoice}`
     );
 
     if (humanChoice === computerChoice) console.log("Tie");
@@ -50,9 +50,7 @@ const playGame = () => {
       computerScore += 1;
     }
 
-    console.log(
-      `Your Score      : ${humanScore}, Computer Score  : ${computerScore}`
-    );
+    console.log(`Your Score: ${humanScore}, Computer Score: ${computerScore}`);
   }
   humanScore === 5
     ? console.log("You won the game!")

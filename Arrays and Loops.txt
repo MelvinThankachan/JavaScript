@@ -1,0 +1,13 @@
+Arrays
+------
+
+    - It is a common practice to declare arrays with the const keyword.
+    - Arrays are a special type of objects. typeof array return that its an object.
+    - Array element can be array or object.
+
+
+Array methods
+-------------
+
+    - toString(): convert to a string
+    - sort(): to sort
